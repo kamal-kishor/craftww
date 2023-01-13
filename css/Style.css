@@ -1,0 +1,917 @@
+*{
+    margin: 0;
+    padding: 0;    
+}    
+body{
+    font-family: "Montserrat", sans-serif;
+}
+.wrapper{    
+    width: 100%;
+}
+.clear{
+    clear: both;
+}
+.head{
+    width: 100%;
+    padding: 25px 0;
+}
+.container{
+    width: 100%;
+    max-width: 1020px;
+    margin:  auto;
+}
+.top-nav {
+    float: left;
+}
+.nav{
+    width: 100%;
+}
+.nav ul {
+    display: block;
+    list-style-type: none;
+}
+.nav ul li a {
+    font-size: 17px;
+    text-decoration: none;
+    color: #000;
+    text-align: justify;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.nav ul li {
+    display: inline;
+    padding: 0 20px;
+}
+.craft-logo img{
+    width: 100%;    
+}
+.craft-logo::before {
+    content: " ";
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    width: 165px;
+    height: 1px;
+    background: #000;
+}
+.craft-logo {
+    width: 160px;
+    padding: 0px 40px;
+    position: relative;
+}
+.drop-down{
+    position: absolute;
+    display: inline-block;
+    color: rgb(172, 161, 172);
+    background: url(../Image/down.png) no-repeat right 0 / 30%;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: relative;
+    z-index: 1;
+    background-color: rgb(243, 239, 239);
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+    padding: 25px 15px 0px 60px;
+}
+.nav .drop-down .dropdown-content a:hover   { color: rgb(238, 146, 161);}
+.drop-down ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+.drop-down ul li {
+    float: right;
+}
+.drop-down ul li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-weight: normal;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+.drop-down ul li.dropdown {
+    display: inline-block;
+    background: url(../Image/down.png) no-repeat right 0/25%;
+}
+.dropdown-content a:hover {background-color: #ccc7c7;}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.video-head .container {
+    max-width: 54%;
+    
+}
+.video-head{
+    width: 100%;
+    padding: 25px 0;
+}
+.video-col{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    height: 410px;
+}
+.video-col video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.content-head{
+    width: 100%;
+    padding: 25px -1px;
+}
+.content-head .container{
+    max-width: 50%;
+}
+.content-head .container .content-col h1{
+    text-align: left;
+    margin-left: 70px;
+    font-size: 34px;
+    line-height: 36px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.content-head .container .content-button .covid-button{
+    border: solid;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 14px 30px;
+    cursor: pointer;
+    background-color: #d86479;
+    color: #fff;
+    margin-top: 40px;
+    display: inline-block;
+    vertical-align: baseline;    
+    margin-left: 220px;
+}
+
+.offer-head {
+    background: url(../Image/craft_symbol_anchor.png) no-repeat 80% bottom / 30%, 
+    url(../Image/home-offerings-bg.jpg) no-repeat 50% center / cover;
+    width: 100%;
+    padding: 0 0 227px 0;
+}
+.remaing-page .offer-head .container .video-col{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    vertical-align: baseline;
+}
+.video-col-01{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    height: 410px;
+}
+.video-col-01 video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 410px;
+    border: none;
+}
+h2{
+    color: white;
+    top: 140px;
+    position: absolute;
+    text-align: left;
+    padding: 20px 20px;
+    width: 300px;
+    z-index: 100;
+    font-weight: 900;
+    display: block;
+}
+.descripstion{
+    text-align: left;
+    margin-left: 70px;
+}
+h3{
+    font-size: 40px;
+    line-height: 41px;
+    font-weight: 600;
+    margin-left: 70px;
+}
+p {
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    line-height: 30px;
+    size: 60px;
+    margin-right: 160px;
+    margin-left: 70px;    
+}
+.offering-service {
+    width: 80%;
+    padding: 30px 0px 0 90px;
+}
+.offering-service ul {
+    list-style-type: none;    
+}
+.offering-service ul li {
+    width: 100%;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 25px;
+    margin-bottom: 30px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 10s;
+}
+@keyframes example{
+    0% {background-color: white;left:0px; top: 200px;} 
+    25% {background-color: white; left:0px; top: 0px;}     
+}
+.offering-service ul li li {
+    width: auto;
+    padding: 0px 0px 10px 35px;
+    background: url(../Image/right-arrow.png) 0px 0px no-repeat;
+    font-size: 25px;
+}
+.offering-service ul li h3 {
+    padding: 0;
+    margin: 0 0 29px 0;
+}
+.offering-service ul li h3::after {
+    content: "";
+    width: 30px;
+    height: 4px;
+    display: block;
+    background-color: #d86479bb ;
+    margin: 10px;
+}
+.offering-service ul li a {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    margin-top: 40px;
+    display: inline-block;
+    padding: 0px 0px 15px 25px;
+}
+.before-content {
+    background: url(../Image/omega.png) no-repeat 0 0 / cover;
+    width: 100%;
+    padding: 0 0 830px 0;
+    margin-top: 100px;
+}
+.footer-head-container {
+    margin-top: 135px;
+    margin-left: 204px;
+    padding: 62px 0 60px 0;
+    position: absolute;
+    background-color: white;
+    width: 600px;
+    align-items: center;
+}
+.footer-head-container h2 {
+    color: black;
+    position: absolute;
+    text-align: center;
+    padding: 0px 100px;
+    width: 100;
+    font-weight: 700;
+    max-width: 460px;
+    width: 76%;
+    font-size: 60px;
+    line-height: 65px;
+    top: 45px;
+}
+.footer-button {
+    padding-top: 270px;
+    margin-left: 230px;
+}
+.footer-button a {
+    background-color: #d86479;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    border-radius: 22px;
+    padding: 14px 30px;
+    text-transform: uppercase;
+    transition: all 200ms ease-in-out;
+}
+
+.footer {
+    width: 100%;
+    padding: 170px 0px 200px 0;
+}
+.footer-head{
+    width: 100%;
+    display: block;
+}
+.footer-head ul li {
+    display: inline;
+    padding: 0 27px;
+}
+.footer-head ul li a {
+    font-size: 17px;
+    text-decoration: none;
+    color: #000;
+    text-align: justify;
+    font-family: sans-serif;
+}
+.linkdin-icon{
+    display: inline;
+    padding: 50%;
+    padding-bottom: 40px;
+}
+.linkdin-icon img{
+    margin-top: 40px;
+}
+.dl-menuwrapper{
+    display: none;
+}
+.mob-nav .dropdown{
+    position: absolute;
+    top: 8px;
+    right: 0;
+    background: url(../Image/down.png) no-repeat right 0/ 35% 18px;
+}
+span.dropbtn {
+    font-weight: 700;
+}
+@media screen and (min-width: 300px) and (max-width: 640px) {
+    .dl-menuwrapper{
+    display: block;
+    }
+    .nav{
+    display: none;
+    }
+    .head{
+    padding: 10px 0px 10px 0px;
+    }
+    .dl-trigger{
+    display: inline;
+    }
+    .craft-logo {
+    width: 100%;
+    display: inline;
+    position: relative;
+    top: 5px;
+    left: 20%;
+    margin: 0 0 0 -20px;
+    padding: 0;
+    }
+    
+    .craft-logo img {   width: 120px;    }
+
+    .craft-logo::before {   display: none;    }
+
+    .drop-down {
+    position: relative;
+    display: inline-block !important;
+    background: url(../Image/down.png) no-repeat right 0 / 30%;
+    }
+    .dropdown-content{
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    padding: 25px 20px;
+    z-index: 1;
+    min-width: 130px;
+    box-shadow: 0px 8px 20px 0px rgb(0 0 0 / 20%);
+    right: 0;
+    }
+    .dropdown-content ul li a{
+    text-align: right;
+    display: block;
+    }
+    .dropdown-content ul li a:hover{
+    text-decoration: none;
+    color: #da6177;
+    }
+    .dropdown:hover .dropdown-content{
+    display: block;
+    }
+    span.dropbtn {
+        font-weight: 700;
+        margin-right: 12px;
+    }
+    .mob-nav .dropdown {
+        position: absolute;
+        top: 8px;
+        right: 0;
+        background: url(../Image/down.png) no-repeat right 0/ 35% 17px;
+    }
+    .container{
+    box-sizing: border-box;
+    padding: 0px 2%;
+    width: 100%;
+    max-width: 100% !important;
+    }
+    .video-head{
+    width: 100%;
+    padding: 0px 0px;
+    }
+    .video-col {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    }
+    .video-col video {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;   
+    }
+    .content-head .container .content-col h1 {
+    text-align: left;
+    font-size: 18px;
+    line-height: 20px;
+    display: block;
+    margin-block-start: 2em;
+    margin-block-end: 1em;
+    margin-inline-start: 6%;
+    margin-inline-end: 6%;
+
+    }
+    .content-head .container .content-button .covid-button {
+    border: solid;
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 2% 3%;
+    cursor: pointer;
+    background-color: #d86479;
+    color: #fff;
+    margin-top: 2%;
+    display: inline-block;
+    vertical-align: baseline;
+    margin-left: 35%;
+    }
+    .offer-head {
+    background: url(../Image/craft_symbol_anchor.png) no-repeat 80% bottom / 30%, 
+    url(../Image/home-offerings-bg.jpg) no-repeat 50% center / cover;
+    width: 100%;
+    padding: 10px 0 65px 0;
+    }
+    .video-col-01 {
+    width: 90%;
+    padding: 2% 2%  35% 2%;
+    position: relative;
+    height: 100%;
+    }
+    h2 {
+    color: white;
+    top: 30px;
+    position: absolute;
+    text-align: left;
+    padding: 0px 20px;
+    width: 45%;
+    z-index: 100;
+    font-weight: 900;
+    font-size: 11px;
+    display: block;
+    }
+    .video-col-01 video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 115px;
+    border: none;
+    margin-left: 2%;
+    }
+    .descripstion {
+    text-align: left;
+    margin-left: 2%;
+    }
+    h3 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    margin-left: 10%;
+    }
+    p {
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    line-height: 21px;
+    margin-right: 23%;
+    margin-left: 10%;
+    margin-top: 10px;
+    }
+    .offering-service {
+    width: 80%;
+    padding: 4% 4% 0% 10%;
+    }
+    .offering-service ul li {
+    width: 100%;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 4%;
+    margin-bottom: 10px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 10s;
+    font-size: 12px;
+    }
+    .offering-service ul li h3 {
+    padding: 0;
+    margin: 0 0 5% 0;
+    font-size: 20px;
+    }
+    .offering-service ul li h3::after {
+    content: "";
+    width: 9%;
+    height: 2px;
+    display: block;
+    background-color: #d86479bb;
+    margin: 1%;
+    }
+    .offering-service ul li li {
+    width: auto;
+    padding: 0% 0% 0% 10%;
+    background: url(../Image/right-arrow.png) -5px 0px no-repeat;
+    font-size: 15px;
+    line-height: 15px;
+    }
+    .offering-service ul li a {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    margin-top: 5%;
+    display: inline-block;
+    padding: 0px 0px 3% 10%;
+    }
+    .before-content {
+    background: url(../Image/omega.png) no-repeat 0 0 / cover;
+    width: 100%;
+    padding: 0% 0% 86% 0%;
+    margin-top: 5%;
+    box-sizing: border-box;
+    }
+    
+    .footer-head-container {
+    margin-top: 16.3%;
+    margin-left: 20%;
+    padding: 2% 0% 5% 2%;
+    position: absolute;
+    background-color: white;
+    width: 55%;
+    align-items: center;
+    }
+    .footer-head-container h2 {
+    color: black;
+    position: absolute;
+    text-align: center;
+    padding: 0px 14px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 15px;
+    top: 15px;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    }
+    .footer-button {
+    padding-top: 41%;
+    margin-left: 27%;
+    }
+    .footer-button a {
+    background-color: #d86479;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    border-radius: 22px;
+    padding: 4% 6%;
+    transition: all 200ms ease-in-out;
+    color: white;
+    }
+    .footer {
+    width: 100%;
+    padding: 10% 0% 40px 0%;
+    }
+    .footer-head ul li {
+    display: block;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    }
+    .footer-head ul li a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #000;
+    text-align: justify;
+    font-family: sans-serif;
+    }
+    .linkdin-icon {
+    display: inline;
+    padding: 0% 0% 0% 50%;
+    padding-right: 50%;
+    }
+    .linkdin-icon img {
+    margin-top: 8%;
+    }
+}
+
+@media screen and (min-width:641px) and (max-width:980px){
+    
+    .dl-menuwrapper{
+        display: block;
+    }
+    .nav{
+        display: none;
+    }
+    .head{
+        padding: 10px 0px 10px 0px;
+    }
+    .dl-trigger{
+        display: inline;
+    }
+    .craft-logo {
+        width: 100%;
+        display: inline;
+        position: relative;
+        top: 5px;
+        left: 35%;
+        margin: 0 0 0 -20px;
+        padding: 0;
+    }
+    .craft-logo img {   width: 120px;    }    
+    .craft-logo::before {   display: none;    }    
+    .drop-down {
+        position: relative;
+        display: inline-block !important;
+        background: url(../Image/down.png) no-repeat right 0 / 30%;
+    }
+
+    .dropdown-content{
+        position: absolute;
+        display: none;
+        background-color: #fff;
+        padding: 25px 20px;
+        z-index: 1;
+        min-width: 130px;
+        box-shadow: 0px 8px 20px 0px rgb(0 0 0 / 20%);
+        right: 0;
+    }
+    .dropdown-content ul li a{
+        text-align: right;
+        display: block;
+    }
+    .dropdown-content ul li a:hover{
+        text-decoration: none;
+        color: #da6177;
+    }
+    .dropdown:hover .dropdown-content{
+        display: block;
+    }
+    span.dropbtn {
+        margin-right: 12px;
+        font-size: 15px;
+    }    
+    .mob-nav .dropdown {
+        position: absolute;
+        top: 8px;
+        right: 0;
+        background: url(../Image/down.png) no-repeat right 3px/ 30% 15px;
+    }
+    .container{
+        box-sizing: border-box;
+        padding: 0px 4%;
+        width: 100%;
+        max-width: 100% !important;
+    }
+    .video-head{
+        width: 100%;
+        padding: 0px 0px;
+    }
+    .video-col {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+    }
+    .video-col video {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;   
+    }
+    .content-head .container .content-col h1 {
+        text-align: left;
+        font-size: 18px;
+        line-height: 20px;
+        display: block;
+        margin-block-start: 2em;
+        margin-block-end: 1em;
+        margin-inline-start: 6%;
+        margin-inline-end: 6%;
+
+    }
+    .content-head .container .content-button .covid-button {
+        border: solid;
+        display: flex;
+        justify-content: center;
+        font-size: 10px;
+        letter-spacing: 1px;
+        text-decoration: none;
+        border-radius: 20px;
+        padding: 2% 3%;
+        cursor: pointer;
+        background-color: #d86479;
+        color: #fff;
+        margin-top: 2%;
+        display: inline-block;
+        vertical-align: baseline;
+        margin-left: 35%;
+    }
+    .offer-head {
+        background: url(../Image/craft_symbol_anchor.png) no-repeat 80% bottom / 30%, 
+        url(../Image/home-offerings-bg.jpg) no-repeat 50% center / cover;
+        width: 100%;
+        padding: 10px 0 125px 0;
+    }
+    .video-col-01 {
+        width: 90%;
+        padding: 2% 2%  35% 2%;
+        position: relative;
+        height: 100%;
+    }
+    h2 {
+        color: white;
+        top: 60px;
+        position: absolute;
+        text-align: left;
+        padding: 0px 9px;
+        width: 45%;
+        z-index: 100;
+        font-weight: 900;
+        font-size: 20px;
+        display: block;
+    }
+    .video-col-01 video {
+        position: absolute;
+        top: 20px;
+        left: 0;
+        width: 100%;
+        height: 207px;
+        border: none;
+        margin-left: 2%;
+    }
+    .descripstion {
+        text-align: left;
+        margin-left: 2%;
+    }
+    h3 {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 600;
+        margin-left: 10%;
+    }
+    p {
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+        font-size: 16px;
+        line-height: 21px;
+        margin-right: 23%;
+        margin-left: 10%;
+        margin-top: 10px;
+    }
+    .offering-service {
+        width: 80%;
+        padding: 4% 4% 0% 10%;
+    }
+    .offering-service ul li {
+        width: 100%;
+        background: #fff;
+        box-sizing: border-box;
+        padding: 4%;
+        margin-bottom: 30px;
+        position: relative;
+        animation-name: example;
+        animation-duration: 10s;
+        font-size: 12px;
+    }
+    .offering-service ul li h3 {
+        padding: 0;
+        margin: 0 0 5% 0;
+        font-size: 25px;
+    }
+    .offering-service ul li h3::after {
+        content: "";
+        width: 5%;
+        height: 2px;
+        display: block;
+        background-color: #d86479bb;
+        margin: 1%;
+    }
+    .offering-service ul li li {
+        width: auto;
+        padding: 0% 0% 0% 10%;
+        background: url(../Image/right-arrow.png) 3px 5px no-repeat;
+        font-size: 20px;
+    }
+    .offering-service ul li a {
+        text-decoration: none;
+        color: #000;
+        position: relative;
+        margin-top: 5%;
+        display: inline-block;
+        padding: 0px 0px 3% 10%;
+        font-size: 20px;
+    }
+    .before-content {
+        background: url(../Image/omega.png) no-repeat 0 0 / cover;
+        width: 100%;
+        padding: 0% 0% 86% 0%;
+        margin-top: 5%;
+        box-sizing: border-box;
+    }
+
+    .footer-head-container {
+        margin-top: 16.3%;
+        margin-left: 20%;
+        padding: 0% 0% 3% 4%;
+        position: absolute;
+        background-color: white;
+        width: 55%;
+        align-items: center;
+    }
+    .footer-head-container h2 {
+        color: black;
+        position: absolute;
+        text-align: center;
+        padding: 14px 14px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 45px;
+        top: 0px;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+    .footer-button {
+        padding-top: 55%;
+        margin-left: 28%;
+    }
+    .footer-button a {
+        background-color: #d86479;
+        font-size: 15px;
+        letter-spacing: 1.5px;
+        text-decoration: none;
+        border-radius: 22px;
+        padding: 4% 10%;
+        transition: all 200ms ease-in-out;
+        color: white;
+    }
+    .footer {
+        width: 100%;
+        padding: 10% 0% 100px 0%;
+    }
+    .footer-head ul li {
+        display: block;
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+    .footer-head ul li a {
+        font-size: 15px;
+        text-decoration: none;
+        color: #000;
+        text-align: justify;
+        font-family: sans-serif;
+    }
+    .linkdin-icon {
+        display: inline;
+        padding: 0% 0% 0% 50%;
+        padding-right: 50%;
+    }
+    .linkdin-icon img {
+        margin-top: 8%;
+    }
+
+}
